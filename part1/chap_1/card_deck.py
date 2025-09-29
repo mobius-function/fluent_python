@@ -47,17 +47,16 @@ class FrenchDeck:
 	def __getitem__(self, position): 
 		return self._cards[position]
 			
-#	def __repr__(self): 
-#		return f'(card.rank, card.suit)'	
-
 	def spades_high(self, card): 
 		rank_value = self.ranks.index(card.rank)
 		return rank_value * len(self.suit_values) + self.suit_values[card.suit]
 
 
+print(FrenchDeck.ranks[0])      			# Able to access ranks class attribute - even initialization is not needed. 
+
 deck = FrenchDeck()
-print(deck.spades_high(list(reversed(deck))[0]))
-print(deck[3])
+print(deck.spades_high(list(reversed(deck))[0]))	# can reverse deck and access the elements because we have defined __getitem__, which is called for element access
+print(deck[3])						# able to access elements. 
 
 
 
