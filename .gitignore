@@ -2,3 +2,4 @@ main.py
 .python-version
 
 *.swp
+*.bin
