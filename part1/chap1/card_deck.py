@@ -60,7 +60,9 @@ print(deck[3])						# able to access elements.
 
 
 
-
+# Chapter Notes: 
+# When len is called in python, it doesn't actually calculate object count, rather just reads a variable called ob_size 
+# stored in C. python is interpreted using a cpython interpreter. 
 
 
 
